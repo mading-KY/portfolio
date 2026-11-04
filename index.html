@@ -10,16 +10,25 @@
     <meta name="author" content="Mading Majok">
 
     <title>Mading Majok | Portfolio</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Personalized favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png?v=2">
 </head>
 
 <body>
+
     <header>
+
         <img src="images/profile.jpg"
              alt="Portrait of Mading Majok"
              title="Mading Majok"
              width="200"
              height="200">
+
+        <!-- Personal MM Canvas Logo -->
+        <canvas id="logo" width="120" height="120">
+            MM - Mading Majok
+        </canvas>
 
         <h1>Mading Majok — Software Engineer</h1>
 
@@ -44,6 +53,7 @@
         </button>
 
         <dialog id="hireDialog">
+
             <h2>Open to Opportunities</h2>
 
             <p>
@@ -63,11 +73,17 @@
                     onclick="document.getElementById('hireDialog').close()">
                 Close
             </button>
+
         </dialog>
+
     </header>
 
+
     <main>
+
+        <!-- ABOUT SECTION -->
         <section id="about">
+
             <h2>About Me</h2>
 
             <p>
@@ -96,7 +112,9 @@
 
             <h3>My First Programming Example</h3>
 
-            <p>One of the first programming concepts I practiced was printing output:</p>
+            <p>
+                One of the first programming concepts I practiced was printing output:
+            </p>
 
             <pre><code>print("Hello, Mading!")</code></pre>
 
@@ -106,9 +124,13 @@
                 <source src="media/intro.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
+
         </section>
 
+
+        <!-- INSPIRATION SECTION -->
         <aside>
+
             <h2>What Inspires Me</h2>
 
             <p>
@@ -126,16 +148,22 @@
                 title="YouTube Shorts video"
                 allowfullscreen>
             </iframe>
+
         </aside>
 
+
+        <!-- SKILLS SECTION -->
         <section id="skills">
+
             <h2>Skills</h2>
 
             <h3>Technical Skills</h3>
 
             <ul>
+
                 <li>
                     Programming
+
                     <ul>
                         <li>Python</li>
                         <li>C++</li>
@@ -145,6 +173,7 @@
 
                 <li>
                     Web Development
+
                     <ul>
                         <li><abbr title="HyperText Markup Language">HTML</abbr></li>
                         <li>CSS</li>
@@ -154,6 +183,7 @@
 
                 <li>
                     Development Tools
+
                     <ul>
                         <li>Git</li>
                         <li>GitHub</li>
@@ -161,7 +191,9 @@
                         <li>PyCharm</li>
                     </ul>
                 </li>
+
             </ul>
+
 
             <h3>Learning Roadmap</h3>
 
@@ -173,9 +205,11 @@
                 <li>Learn more about systems and software engineering</li>
             </ol>
 
+
             <h3>Technical Glossary</h3>
 
             <dl>
+
                 <dt>API</dt>
                 <dd>A way for software applications to communicate with each other.</dd>
 
@@ -187,8 +221,11 @@
 
                 <dt>Framework</dt>
                 <dd>A structured foundation that helps developers build software applications.</dd>
+
             </dl>
 
+
+            <!-- SKILL METERS -->
             <h3>Skill Levels</h3>
 
             <p>
@@ -216,12 +253,25 @@
                        high="0.7"
                        optimum="1">40%</meter>
             </p>
+
+
+            <!-- CANVAS SKILLS CHART -->
+            <h3>Skills Chart</h3>
+
+            <canvas id="skillsChart" width="300" height="180">
+                A chart showing my programming skill levels.
+            </canvas>
+
         </section>
 
+
+        <!-- PROJECTS SECTION -->
         <section id="projects-section">
+
             <h2>Projects</h2>
 
             <article>
+
                 <h3>JunubMart</h3>
 
                 <p>
@@ -233,20 +283,26 @@
                     Technologies include <code>Python</code>, <code>Django</code>,
                     <code>HTML</code>, <code>CSS</code>, and <code>SQLite</code>.
                 </p>
+
             </article>
 
+
             <article>
+
                 <h3>Portfolio Website</h3>
 
                 <p>
                     A personal portfolio website documenting my skills, projects, education,
                     and journey as a Software Engineering student.
                 </p>
+
             </article>
+
 
             <h3>Projects Summary</h3>
 
             <table border="1">
+
                 <caption>Projects Summary</caption>
 
                 <thead>
@@ -259,6 +315,7 @@
                 </thead>
 
                 <tbody>
+
                     <tr>
                         <td>JunubMart</td>
                         <td>Python, Django, SQLite</td>
@@ -272,15 +329,21 @@
                         <td>Personal portfolio and software engineering profile.</td>
                         <td>In Progress</td>
                     </tr>
+
                 </tbody>
+
             </table>
 
             <p>
                 <a href="projects.html">See all my projects</a>
             </p>
+
         </section>
 
+
+        <!-- EDUCATION SECTION -->
         <section id="education">
+
             <h2>Education</h2>
 
             <h3>Addis Ababa Science and Technology University</h3>
@@ -292,15 +355,18 @@
                 coursework and personal projects.
             </p>
 
+
             <p>
                 <label for="degree">Degree progress:</label>
                 <progress id="degree" value="50" max="100">50%</progress>
                 50%
             </p>
 
+
             <h3>Academic Record</h3>
 
             <table border="1">
+
                 <caption>My Academic Record</caption>
 
                 <thead>
@@ -313,6 +379,7 @@
                 </thead>
 
                 <tbody>
+
                     <tr>
                         <td rowspan="3">Addis Ababa Science and Technology University</td>
                         <td>Software Engineering</td>
@@ -331,6 +398,7 @@
                         <td>2026/27</td>
                         <td>In Progress</td>
                     </tr>
+
                 </tbody>
 
                 <tfoot>
@@ -340,15 +408,21 @@
                         </td>
                     </tr>
                 </tfoot>
+
             </table>
+
 
             <p>
                 Addis Ababa Science and Technology University,
                 <time datetime="2024-11">November 2024</time> – present
             </p>
+
         </section>
 
+
+        <!-- CONTACT SECTION -->
         <section id="contact">
+
             <h2>Contact</h2>
 
             <p>
@@ -359,6 +433,7 @@
             <p>
                 <a href="files/cv.pdf" download>Download my CV</a>
             </p>
+
 
             <p>
                 GitHub:
@@ -372,12 +447,15 @@
                 </a>
             </p>
 
+
+            <!-- IMAGE MAP -->
             <img src="images/connect-banner.png"
                  alt="Connect with Mading Majok"
                  usemap="#connect-map"
                  width="600">
 
             <map name="connect-map">
+
                 <area shape="rect"
                       coords="0,0,200,200"
                       href="https://github.com/mading-KY"
@@ -392,7 +470,9 @@
                       coords="400,0,600,200"
                       href="mailto:madingmajok484@gmail.com"
                       alt="Send Mading Majok an email">
+
             </map>
+
 
             <h3>Where I Study</h3>
 
@@ -406,19 +486,31 @@
                 referrerpolicy="strict-origin-when-cross-origin">
             </iframe>
 
+
+            <!-- CONTACT FORM -->
             <h3>Send Me a Message</h3>
 
-            <form action="thank-you.html" method="post" enctype="multipart/form-data">
+            <form action="thank-you.html"
+                  method="post"
+                  enctype="multipart/form-data">
+
                 <fieldset>
+
                     <legend>Your Details</legend>
 
                     <label for="fullname">Full name:</label>
-                    <input type="text" id="fullname" name="fullname" required>
+                    <input type="text"
+                           id="fullname"
+                           name="fullname"
+                           required>
 
                     <br><br>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           required>
 
                     <br><br>
 
@@ -428,62 +520,102 @@
                            name="phone"
                            pattern="0[79][0-9]{8}"
                            title="Enter 10 digits starting with 09 or 07">
+
                 </fieldset>
 
+
                 <fieldset>
+
                     <legend>Project Details</legend>
 
                     <p>Preferred contact method:</p>
 
-                    <input type="radio" id="by-email" name="contact-method"
-                           value="email" checked>
+                    <input type="radio"
+                           id="by-email"
+                           name="contact-method"
+                           value="email"
+                           checked>
+
                     <label for="by-email">Email</label>
 
-                    <input type="radio" id="by-phone" name="contact-method"
+                    <input type="radio"
+                           id="by-phone"
+                           name="contact-method"
                            value="phone">
+
                     <label for="by-phone">Phone</label>
 
                     <br><br>
 
                     <label for="meeting">Preferred meeting date:</label>
-                    <input type="date" id="meeting" name="meeting" min="2026-11-01">
+                    <input type="date"
+                           id="meeting"
+                           name="meeting"
+                           min="2026-11-01">
 
                     <br><br>
 
                     <label for="weeks">Project length (weeks):</label>
-                    <input type="number" id="weeks" name="weeks"
-                           min="1" max="52" step="1">
+                    <input type="number"
+                           id="weeks"
+                           name="weeks"
+                           min="1"
+                           max="52"
+                           step="1">
 
                     <br><br>
 
                     <label for="brief">Attach a project brief:</label>
-                    <input type="file" id="brief" name="brief">
+                    <input type="file"
+                           id="brief"
+                           name="brief">
 
                     <br><br>
 
                     <label for="colour">Preferred website colour:</label>
-                    <input type="color" id="colour" name="colour" value="#2e1f9e">
+                    <input type="color"
+                           id="colour"
+                           name="colour"
+                           value="#2e1f9e">
 
                     <br><br>
 
-                    <label for="rating">How much do you like my portfolio? (1–10)</label>
-                    <input type="range" id="rating" name="rating"
-                           min="1" max="10" value="7">
+                    <label for="rating">
+                        How much do you like my portfolio? (1–10)
+                    </label>
+
+                    <input type="range"
+                           id="rating"
+                           name="rating"
+                           min="1"
+                           max="10"
+                           value="7">
 
                     <br><br>
 
                     <label for="budget">Your budget (ETB):</label>
-                    <input type="number" id="budget" name="budget"
-                           min="1000" step="500">
+                    <input type="number"
+                           id="budget"
+                           name="budget"
+                           min="1000"
+                           step="500">
+
                 </fieldset>
 
+
                 <fieldset>
+
                     <legend>Your Message</legend>
 
                     <label for="reason">Reason for contacting me:</label>
 
-                    <select id="reason" name="reason" required>
-                        <option value="" disabled selected>Select a reason</option>
+                    <select id="reason"
+                            name="reason"
+                            required>
+
+                        <option value="" disabled selected>
+                            Select a reason
+                        </option>
 
                         <optgroup label="Work">
                             <option value="internship">Internship offer</option>
@@ -497,6 +629,7 @@
                         </optgroup>
 
                         <option value="other">Other</option>
+
                     </select>
 
                     <br><br>
@@ -504,29 +637,129 @@
                     <label for="message">Message:</label>
                     <br>
 
-                    <textarea id="message" name="message"
-                              rows="6" cols="40" required></textarea>
+                    <textarea id="message"
+                              name="message"
+                              rows="6"
+                              cols="40"
+                              required></textarea>
 
                     <br><br>
 
-                    <input type="checkbox" id="copy" name="copy" value="yes">
-                    <label for="copy">Send me a copy of this message</label>
+                    <input type="checkbox"
+                           id="copy"
+                           name="copy"
+                           value="yes">
+
+                    <label for="copy">
+                        Send me a copy of this message
+                    </label>
+
                 </fieldset>
+
 
                 <button type="submit">Send Message</button>
                 <button type="reset">Clear</button>
+
             </form>
+
         </section>
+
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
+
         <p>&copy; 2026 Mading Majok. All rights reserved.</p>
 
         <p>
             Last updated:
             <time datetime="2026-11-05">5 November 2026</time>
         </p>
-    </footer>
-</body>
 
+    </footer>
+
+
+    <!-- CANVAS JAVASCRIPT -->
+    <script>
+
+        // ==================================
+        // PERSONAL MM LOGO
+        // ==================================
+
+        const logoCanvas = document.getElementById("logo");
+        const logoCtx = logoCanvas.getContext("2d");
+
+        // Draw the indigo background
+        logoCtx.fillStyle = "#2E1F9E";
+        logoCtx.fillRect(0, 0, 120, 120);
+
+        // Draw the white circle
+        logoCtx.beginPath();
+        logoCtx.arc(60, 60, 45, 0, 2 * Math.PI);
+        logoCtx.fillStyle = "#FFFFFF";
+        logoCtx.fill();
+
+        // Draw the MM initials
+        logoCtx.fillStyle = "#2E1F9E";
+        logoCtx.font = "bold 36px Arial";
+        logoCtx.textAlign = "center";
+        logoCtx.textBaseline = "middle";
+        logoCtx.fillText("MM", 60, 60);
+
+
+        // ==================================
+        // SKILLS BAR CHART
+        // ==================================
+
+        const chartCanvas = document.getElementById("skillsChart");
+        const chartCtx = chartCanvas.getContext("2d");
+
+        // Skill names and levels
+        const skills = [
+            { name: "Python", level: 0.8 },
+            { name: "HTML", level: 0.8 },
+            { name: "CSS", level: 0.7 },
+            { name: "JavaScript", level: 0.4 }
+        ];
+
+        // Chart settings
+        const barHeight = 20;
+        const gap = 20;
+        const startY = 10;
+        const maxBarWidth = 180;
+
+        // Draw each skill bar
+        skills.forEach((skill, index) => {
+
+            const y = startY + index * (barHeight + gap);
+
+            // Draw skill name
+            chartCtx.fillStyle = "#111111";
+            chartCtx.font = "12px Arial";
+            chartCtx.fillText(skill.name, 5, y + 14);
+
+            // Draw background bar
+            chartCtx.fillStyle = "#DDDDDD";
+            chartCtx.fillRect(
+                100,
+                y,
+                maxBarWidth,
+                barHeight
+            );
+
+            // Draw skill progress
+            chartCtx.fillStyle = "#2E1F9E";
+            chartCtx.fillRect(
+                100,
+                y,
+                maxBarWidth * skill.level,
+                barHeight
+            );
+
+        });
+
+    </script>
+
+</body>
 </html>
