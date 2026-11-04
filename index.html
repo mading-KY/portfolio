@@ -38,6 +38,32 @@
             <a href="#education">Education</a> |
             <a href="#contact">Contact</a>
         </nav>
+
+        <button type="button"
+    onclick="document.getElementById('hireDialog').showModal()">
+    Hire me
+</button>
+
+<dialog id="hireDialog">
+    <h2>Open to Opportunities</h2>
+
+    <p>
+        I am open to internship opportunities and suitable
+        freelance web development projects.
+    </p>
+
+    <p>
+        <a href="#contact">Send me a message</a>
+        or
+        <a href="files/cv.pdf" download>download my CV</a>.
+    </p>
+
+    <button type="button"
+        onclick="document.getElementById('hireDialog').close()">
+        Close
+    </button>
+</dialog>
+
     </header>
 
     <main>
@@ -158,6 +184,43 @@
                 <dt>Framework</dt>
                 <dd>A structured foundation that helps developers build software applications.</dd>
             </dl>
+
+            <h3>Skill Levels</h3>
+
+<p>
+    <label for="lvl-python">Python:</label>
+    <meter id="lvl-python" value="0.8" min="0" max="1">
+        80%
+    </meter>
+</p>
+
+<p>
+    <label for="lvl-html">HTML:</label>
+    <meter id="lvl-html" value="0.8" min="0" max="1">
+        80%
+    </meter>
+</p>
+
+<p>
+    <label for="lvl-css">CSS:</label>
+    <meter id="lvl-css" value="0.7" min="0" max="1">
+        70%
+    </meter>
+</p>
+
+<p>
+    <label for="lvl-javascript">JavaScript:</label>
+    <meter id="lvl-javascript"
+           value="0.4"
+           min="0"
+           max="1"
+           low="0.3"
+           high="0.7"
+           optimum="1">
+        40%
+    </meter>
+</p>
+
         </section>
 
         <section id="projects-section">
@@ -233,6 +296,14 @@
                 Currently studying Software Engineering and developing practical skills through
                 coursework and personal projects.
             </p>
+
+            <p>
+    <label for="degree">Degree progress:</label>
+    <progress id="degree" value="50" max="100">
+        50%
+    </progress>
+    50%
+</p>
 
             <h3>Academic Record</h3>
 
