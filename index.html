@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <header>
         <img src="images/profile.jpg"
              alt="Portrait of Mading Majok"
@@ -40,40 +39,42 @@
         </nav>
 
         <button type="button"
-    onclick="document.getElementById('hireDialog').showModal()">
-    Hire me
-</button>
+                onclick="document.getElementById('hireDialog').showModal()">
+            Hire me
+        </button>
 
-<dialog id="hireDialog">
-    <h2>Open to Opportunities</h2>
+        <dialog id="hireDialog">
+            <h2>Open to Opportunities</h2>
 
-    <p>
-        I am open to internship opportunities and suitable
-        freelance web development projects.
-    </p>
+            <p>
+                I am open to internship opportunities and suitable
+                freelance web development projects.
+            </p>
 
-    <p>
-        <a href="#contact">Send me a message</a>
-        or
-        <a href="files/cv.pdf" download>download my CV</a>.
-    </p>
+            <p>
+                <a href="#contact">Send me a message</a>
+                or
+                <a href="files/cv.pdf" download>
+                    download my <abbr title="Curriculum Vitae">CV</abbr>
+                </a>.
+            </p>
 
-    <button type="button"
-        onclick="document.getElementById('hireDialog').close()">
-        Close
-    </button>
-</dialog>
-
+            <button type="button"
+                    onclick="document.getElementById('hireDialog').close()">
+                Close
+            </button>
+        </dialog>
     </header>
 
     <main>
-
         <section id="about">
             <h2>About Me</h2>
 
             <p>
-                I am a <strong>Software Engineering student</strong> at Addis Ababa Science and
-                Technology University, interested in building useful software and understanding
+                I am a <strong>Software Engineering student</strong> at
+                Addis Ababa Science and Technology University
+                (<abbr title="Addis Ababa Science and Technology University">AASTU</abbr>),
+                interested in building useful software and understanding
                 how systems work.
             </p>
 
@@ -88,6 +89,11 @@
                 <mark>Keep learning. Keep building.</mark>
             </p>
 
+            <p>
+                My favourite tag is &lt;main&gt;, because it tells the browser
+                where the important content is &amp; helps screen readers.
+            </p>
+
             <h3>My First Programming Example</h3>
 
             <p>One of the first programming concepts I practiced was printing output:</p>
@@ -96,11 +102,10 @@
 
             <h3>Hear my introduction</h3>
 
-<audio controls>
-    <source src="media/intro.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
-
+            <audio controls>
+                <source src="media/intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </section>
 
         <aside>
@@ -114,14 +119,13 @@
 
             <h3>A Video I Recommend</h3>
 
-<iframe
-    src="https://www.youtube.com/embed/3XPuGqqWLtk"
-    width="560"
-    height="315"
-    title="YouTube Shorts video"
-    allowfullscreen>
-</iframe>
-
+            <iframe
+                src="https://www.youtube.com/embed/3XPuGqqWLtk"
+                width="560"
+                height="315"
+                title="YouTube Shorts video"
+                allowfullscreen>
+            </iframe>
         </aside>
 
         <section id="skills">
@@ -142,7 +146,7 @@
                 <li>
                     Web Development
                     <ul>
-                        <li>HTML</li>
+                        <li><abbr title="HyperText Markup Language">HTML</abbr></li>
                         <li>CSS</li>
                         <li>Django</li>
                     </ul>
@@ -187,40 +191,31 @@
 
             <h3>Skill Levels</h3>
 
-<p>
-    <label for="lvl-python">Python:</label>
-    <meter id="lvl-python" value="0.8" min="0" max="1">
-        80%
-    </meter>
-</p>
+            <p>
+                <label for="lvl-python">Python:</label>
+                <meter id="lvl-python" value="0.8" min="0" max="1">80%</meter>
+            </p>
 
-<p>
-    <label for="lvl-html">HTML:</label>
-    <meter id="lvl-html" value="0.8" min="0" max="1">
-        80%
-    </meter>
-</p>
+            <p>
+                <label for="lvl-html">HTML:</label>
+                <meter id="lvl-html" value="0.8" min="0" max="1">80%</meter>
+            </p>
 
-<p>
-    <label for="lvl-css">CSS:</label>
-    <meter id="lvl-css" value="0.7" min="0" max="1">
-        70%
-    </meter>
-</p>
+            <p>
+                <label for="lvl-css">CSS:</label>
+                <meter id="lvl-css" value="0.7" min="0" max="1">70%</meter>
+            </p>
 
-<p>
-    <label for="lvl-javascript">JavaScript:</label>
-    <meter id="lvl-javascript"
-           value="0.4"
-           min="0"
-           max="1"
-           low="0.3"
-           high="0.7"
-           optimum="1">
-        40%
-    </meter>
-</p>
-
+            <p>
+                <label for="lvl-javascript">JavaScript:</label>
+                <meter id="lvl-javascript"
+                       value="0.4"
+                       min="0"
+                       max="1"
+                       low="0.3"
+                       high="0.7"
+                       optimum="1">40%</meter>
+            </p>
         </section>
 
         <section id="projects-section">
@@ -298,12 +293,10 @@
             </p>
 
             <p>
-    <label for="degree">Degree progress:</label>
-    <progress id="degree" value="50" max="100">
-        50%
-    </progress>
-    50%
-</p>
+                <label for="degree">Degree progress:</label>
+                <progress id="degree" value="50" max="100">50%</progress>
+                50%
+            </p>
 
             <h3>Academic Record</h3>
 
@@ -348,6 +341,11 @@
                     </tr>
                 </tfoot>
             </table>
+
+            <p>
+                Addis Ababa Science and Technology University,
+                <time datetime="2024-11">November 2024</time> – present
+            </p>
         </section>
 
         <section id="contact">
@@ -398,20 +396,19 @@
 
             <h3>Where I Study</h3>
 
-<iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.940001218583!2d38.80717310919749!3d8.885170691189751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793827108955!5m2!1sen!2set"
-    width="600"
-    height="450"
-    title="Map of Addis Ababa Science and Technology University"
-    allowfullscreen
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin">
-</iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.940001218583!2d38.80717310919749!3d8.885170691189751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793827108955!5m2!1sen!2set"
+                width="600"
+                height="450"
+                title="Map of Addis Ababa Science and Technology University"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
 
             <h3>Send Me a Message</h3>
 
             <form action="thank-you.html" method="post" enctype="multipart/form-data">
-
                 <fieldset>
                     <legend>Your Details</legend>
 
@@ -518,15 +515,18 @@
 
                 <button type="submit">Send Message</button>
                 <button type="reset">Clear</button>
-
             </form>
         </section>
-
     </main>
 
     <footer>
         <p>&copy; 2026 Mading Majok. All rights reserved.</p>
-    </footer>
 
+        <p>
+            Last updated:
+            <time datetime="2026-11-05">5 November 2026</time>
+        </p>
+    </footer>
 </body>
+
 </html>
