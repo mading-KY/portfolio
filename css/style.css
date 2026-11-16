@@ -1,3 +1,4 @@
+
 /* ==========================================
    Portfolio stylesheet — Mading Majok
    ========================================== */
@@ -10,7 +11,16 @@
    Text: #333333
 */
 
-/* ---------- Base Colours ---------- */
+
+/* ---------- Base ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
 
 body {
     background-color: #F4F6F9;
@@ -20,8 +30,22 @@ body {
     line-height: 1.6;
 }
 
+
+/* ---------- Grouped Heading Selectors ---------- */
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+
+/* ---------- Individual Heading Selectors ---------- */
+
 h1 {
     color: #2E1F9E;
+    font-size: 6vw;
     text-align: center;
     font-weight: 700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -29,41 +53,25 @@ h1 {
 
 h2 {
     color: rgb(46, 31, 158);
+    font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 600;
 }
 
 h3 {
     color: hsl(247, 67%, 37%);
+    font-size: 1.2rem;
+}
+
+
+/* ---------- Text Elements ---------- */
+
+p {
+    color: #333333;
 }
 
 mark {
     background-color: rgba(212, 160, 23, 0.35);
-}
-
-/* ---------- Typography Units ---------- */
-
-html {
-    font-size: 16px;
-}
-
-h1 {
-    /* font-size: 2.5rem; */
-    font-size: 6vw; /* Responsive font size based on viewport width */
-}
-
-h2 {
-    font-size: 1.8rem;
-}
-
-h3 {
-    font-size: 1.2rem;
-}
-
-a {
-    color: #2E1F9E;
-    text-decoration: none;
 }
 
 blockquote {
@@ -74,4 +82,71 @@ blockquote {
 code,
 pre {
     font-family: 'Courier New', monospace;
+}
+
+
+/* ---------- Links ---------- */
+
+a {
+    color: #2E1F9E;
+    text-decoration: none;
+}
+
+
+/* ---------- Classes ---------- */
+
+.tagline {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #5a6b7d;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background-color: #2E1F9E;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #5a6b7d;
+}
+
+.card {
+    background-color: white;
+}
+
+
+/* ---------- ID Selectors ---------- */
+
+#contact {
+    background-color: #e8eef6;
+}
+
+
+/* ---------- Combinator Selectors ---------- */
+
+/* Descendant selector */
+nav a {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Child selector */
+.card > p {
+    color: #5a6b7d;
+}
+
+/* Adjacent sibling selector */
+h2 + p {
+    font-size: 1.1rem;
+}
+
+/* General sibling selector */
+legend ~ label {
+    font-weight: 600;
 }

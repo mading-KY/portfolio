@@ -21,6 +21,8 @@ rel="stylesheet">
 
 </head>
 
+<p class="tagline">Software Engineering Student — Software, Databases & AI/Data</p>
+
 <body>
 
     <header>
@@ -53,10 +55,7 @@ rel="stylesheet">
             <a href="#contact">Contact</a>
         </nav>
 
-        <button type="button"
-                onclick="document.getElementById('hireDialog').showModal()">
-            Hire me
-        </button>
+        <button type="button" class="btn" onclick="openHireDialog()">Hire me</button>
 
         <dialog id="hireDialog">
 
@@ -276,7 +275,7 @@ rel="stylesheet">
 
             <h2>Projects</h2>
 
-            <article>
+            <article class="card">
 
                 <h3>JunubMart</h3>
 
@@ -293,7 +292,7 @@ rel="stylesheet">
             </article>
 
 
-            <article>
+            <article class="card">
 
                 <h3>Portfolio Website</h3>
 
@@ -663,8 +662,8 @@ rel="stylesheet">
                 </fieldset>
 
 
-                <button type="submit">Send Message</button>
-                <button type="reset">Clear</button>
+                <button type="submit" class="btn">Send Message</button>
+                <button type="reset" class="btn btn-secondary">Clear</button>
 
             </form>
 
