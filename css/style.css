@@ -11,7 +11,9 @@
    Text: #333333
 */
 
-/* ---------- Base ---------- */
+/* ==========================================
+   LAB 17 — RESET AND BASE
+   ========================================== */
 
 * {
     box-sizing: border-box;
@@ -22,6 +24,7 @@ html {
 }
 
 body {
+    margin: 0;
     background-color: #F4F6F9;
     color: #333333;
     font-family: 'Poppins', Arial, sans-serif;
@@ -29,7 +32,7 @@ body {
     line-height: 1.6;
 }
 
-/* ---------- Grouped Heading Selectors ---------- */
+/* ---------- Grouped Headings ---------- */
 
 h1,
 h2,
@@ -37,8 +40,6 @@ h3 {
     line-height: 1.2;
     font-weight: 600;
 }
-
-/* ---------- Individual Heading Selectors ---------- */
 
 h1 {
     color: #2E1F9E;
@@ -60,7 +61,7 @@ h3 {
     font-size: 1.2rem;
 }
 
-/* ---------- Text Elements ---------- */
+/* ---------- Text ---------- */
 
 p {
     color: #333333;
@@ -87,7 +88,9 @@ a {
     text-decoration: none;
 }
 
-/* ---------- Classes ---------- */
+/* ==========================================
+   LAB 17 — CLASSES AND IDS
+   ========================================== */
 
 .tagline {
     text-align: center;
@@ -113,32 +116,26 @@ a {
     background-color: white;
 }
 
-/* ---------- ID Selectors ---------- */
-
 #contact {
     background-color: #e8eef6;
 }
 
-/* ---------- Combinator Selectors ---------- */
+/* ---------- Combinators ---------- */
 
-/* Descendant: links inside the navigation */
 nav a {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.9rem;
 }
 
-/* Child: paragraphs directly inside cards */
 .card > p {
     color: #5a6b7d;
 }
 
-/* Adjacent sibling: paragraph immediately after a heading */
 h2 + p {
     font-size: 1.1rem;
 }
 
-/* General sibling: labels after a legend */
 legend ~ label {
     font-weight: 600;
 }
@@ -146,8 +143,6 @@ legend ~ label {
 /* ==========================================
    LAB 18 — ATTRIBUTE SELECTORS
    ========================================== */
-
-/* ---------- Form Inputs ---------- */
 
 input[type="text"],
 input[type="email"],
@@ -160,14 +155,10 @@ textarea {
     font-size: 1rem;
 }
 
-/* Abbreviations with title tooltips */
-
 abbr[title] {
     cursor: help;
     text-decoration: underline dotted;
 }
-
-/* Every element whose class contains "btn" */
 
 [class*="btn"] {
     text-transform: uppercase;
@@ -178,48 +169,30 @@ abbr[title] {
    LAB 18 — PSEUDO-ELEMENTS
    ========================================== */
 
-/* ---------- Link Icons ---------- */
-
-/* External HTTPS links */
-
 a[href^="https"]::after {
     content: "  ↗";
 }
-
-/* Email links */
 
 a[href^="mailto"]::before {
     content: "✉ ";
 }
 
-/* Telephone links */
-
 a[href^="tel"]::before {
     content: "☎ ";
 }
 
-/* Download links */
-
 a[download]::before {
     content: "⬇ ";
 }
-
-/* ---------- Decorated Headings ---------- */
 
 h2::before {
     content: "// ";
     color: #D4A017;
 }
 
-/* Emphasize the first line after each h2 */
-
 h2 + p::first-line {
     font-weight: 600;
 }
-
-/* ---------- Links to Your Own HTML Pages ---------- */
-
-/* Apply only inside main, so navigation links are not decorated */
 
 main a[href$=".html"]::after {
     content: " →";
@@ -229,34 +202,26 @@ main a[href$=".html"]::after {
    LAB 18 — PSEUDO-CLASSES
    ========================================== */
 
-/* ---------- Link States: LVHA Order ---------- */
-
-/* Link not yet visited */
+/* Link states: LVHA order */
 
 a:link {
     color: #2E1F9E;
 }
 
-/* Link already visited */
-
 a:visited {
     color: #6a3fa0;
 }
-
-/* Mouse hovering over a link */
 
 a:hover {
     color: #D4A017;
     text-decoration: underline;
 }
 
-/* Link while being clicked */
-
 a:active {
     color: #b03a2e;
 }
 
-/* ---------- Button Hover ---------- */
+/* Button hover */
 
 .btn:hover {
     background-color: #1e146b;
@@ -266,20 +231,151 @@ a:active {
     background-color: #445566;
 }
 
-/* ---------- First List Item ---------- */
+/* List and table effects */
 
 ol li:first-child {
     font-weight: 600;
 }
 
-/* ---------- Striped Table Rows ---------- */
-
 tbody tr:nth-child(even) {
     background-color: #eef0f8;
 }
 
-/* ---------- Your Turn: Card Hover ---------- */
-
 .card:hover {
     background-color: #fff9e8;
+}
+
+/* ==========================================
+   LAB 19 — BOX MODEL AND DISPLAY
+   ========================================== */
+
+/* ---------- Main Page Layout ---------- */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+}
+
+/* ---------- Centre Logo and Profile Photo ---------- */
+
+#logo,
+header img {
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+header img {
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+/* ---------- Navigation Links as Buttons ---------- */
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border: 2px solid #2E1F9E;
+}
+
+/* ---------- Skill Labels ---------- */
+
+label[for^="lvl"] {
+    display: inline-block;
+    width: 7rem;
+}
+
+/* ---------- Sections and Aside ---------- */
+
+section,
+aside {
+    margin: 2rem 0;
+    padding: 1.5rem;
+}
+
+aside {
+    border-left: 6px solid #D4A017;
+}
+
+/* ---------- Project Cards ---------- */
+
+.card {
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid #d5dde8;
+}
+
+/* ---------- Images and Video ---------- */
+
+.card img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    display: block;
+    max-width: 100%;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem 0.25rem 0 0;
+}
+
+/* ---------- Forms ---------- */
+
+fieldset {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border: 2px solid #d5dde8;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    padding: 0.4rem;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #c5d0de;
+    padding: 0.5rem 0.75rem;
+}
+
+caption {
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+/* ---------- Nested Lists ---------- */
+
+ul ul {
+    list-style-type: square;
 }
