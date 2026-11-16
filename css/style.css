@@ -11,9 +11,9 @@
    Text: #333333
 */
 
-/* ==========================================
+/*
    LAB 17 — RESET AND BASE
-   ========================================== */
+    */
 
 * {
     box-sizing: border-box;
@@ -88,9 +88,9 @@ a {
     text-decoration: none;
 }
 
-/* ==========================================
+/*
    LAB 17 — CLASSES AND IDS
-   ========================================== */
+    */
 
 .tagline {
     text-align: center;
@@ -117,10 +117,19 @@ a {
 }
 
 #contact {
-    background-color: #e8eef6;
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.88),
+            rgba(255, 255, 255, 0.88)
+        ),
+        url("../images/contact-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* ---------- Combinators ---------- */
+/*  Combinators */
 
 nav a {
     font-weight: 600;
@@ -140,9 +149,9 @@ legend ~ label {
     font-weight: 600;
 }
 
-/* ==========================================
+/* 
    LAB 18 — ATTRIBUTE SELECTORS
-   ========================================== */
+  */
 
 input[type="text"],
 input[type="email"],
@@ -153,6 +162,7 @@ textarea {
     border: 2px solid #2E1F9E;
     font-family: inherit;
     font-size: 1rem;
+    padding: 0.4rem;
 }
 
 abbr[title] {
@@ -165,9 +175,9 @@ abbr[title] {
     letter-spacing: 1px;
 }
 
-/* ==========================================
+/* 
    LAB 18 — PSEUDO-ELEMENTS
-   ========================================== */
+   */
 
 a[href^="https"]::after {
     content: "  ↗";
@@ -198,9 +208,9 @@ main a[href$=".html"]::after {
     content: " →";
 }
 
-/* ==========================================
+/*
    LAB 18 — PSEUDO-CLASSES
-   ========================================== */
+  */
 
 /* Link states: LVHA order */
 
@@ -245,11 +255,11 @@ tbody tr:nth-child(even) {
     background-color: #fff9e8;
 }
 
-/* ==========================================
+/* 
    LAB 19 — BOX MODEL AND DISPLAY
-   ========================================== */
+  */
 
-/* ---------- Main Page Layout ---------- */
+/* Main Page Layout  */
 
 main {
     max-width: 900px;
@@ -260,15 +270,27 @@ main {
 header {
     text-align: center;
     padding: 2rem 1rem;
+
+    /* 
+       LAB 20 — BACKGROUND IMAGE AND GRADIENT
+        */
+
+    background-image:
+        url("../images/pattern.png"),
+        linear-gradient(135deg, #2E1F9E, #111111);
+
+    background-repeat: repeat;
 }
 
 footer {
     text-align: center;
     padding: 1.5rem 1rem;
     margin-top: 3rem;
+    background-color: #111111;
+    color: rgba(255, 255, 255, 0.8);
 }
 
-/* ---------- Centre Logo and Profile Photo ---------- */
+/* Centre Logo and Profile Photo  */
 
 #logo,
 header img {
@@ -281,7 +303,7 @@ header img {
     border-radius: 50%;
 }
 
-/* ---------- Navigation Links as Buttons ---------- */
+/*  Navigation Links as Buttons  */
 
 nav a {
     display: inline-block;
@@ -290,14 +312,43 @@ nav a {
     border: 2px solid #2E1F9E;
 }
 
-/* ---------- Skill Labels ---------- */
+/*  Header Text and Navigation  */
+
+header h1 {
+    color: white;
+}
+
+header .tagline {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+header p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+header nav a:link,
+header nav a:visited {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+header .btn {
+    background-color: #D4A017;
+    color: #111111;
+}
+
+/* Skill Labels */
 
 label[for^="lvl"] {
     display: inline-block;
     width: 7rem;
 }
 
-/* ---------- Sections and Aside ---------- */
+/* Sections and Aside */
 
 section,
 aside {
@@ -307,9 +358,14 @@ aside {
 
 aside {
     border-left: 6px solid #D4A017;
+
+    /* LAB 20 — RADIAL GRADIENT */
+
+    background-image:
+        radial-gradient(circle at top left, #fff3dc, white 70%);
 }
 
-/* ---------- Project Cards ---------- */
+/* Project Cards  */
 
 .card {
     padding: 1rem 1.5rem;
@@ -317,7 +373,7 @@ aside {
     border: 1px solid #d5dde8;
 }
 
-/* ---------- Images and Video ---------- */
+/*  Images and Video  */
 
 .card img,
 video {
@@ -326,19 +382,29 @@ video {
     height: auto;
 }
 
+/* LAB 20 — IMAGE OPACITY */
+
+.card img {
+    opacity: 0.85;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+
 iframe {
     display: block;
     max-width: 100%;
 }
 
-/* ---------- Buttons ---------- */
+/*  Buttons  */
 
 .btn {
     padding: 0.6rem 1.2rem;
     margin: 0.5rem 0.25rem 0 0;
 }
 
-/* ---------- Forms ---------- */
+/*  Forms  */
 
 fieldset {
     margin: 0 0 1rem;
@@ -346,16 +412,7 @@ fieldset {
     border: 2px solid #d5dde8;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="date"],
-select,
-textarea {
-    padding: 0.4rem;
-}
-
-/* ---------- Tables ---------- */
+/*  Tables  */
 
 table {
     border-collapse: collapse;
@@ -374,8 +431,34 @@ caption {
     padding: 0.5rem;
 }
 
-/* ---------- Nested Lists ---------- */
+/*  Nested Lists  */
 
 ul ul {
     list-style-type: square;
+}
+
+/* 
+   LAB 20 — TRANSPARENCY AND RGBA
+    */
+
+/* Header text and navigation remain readable
+   against the dark gradient. */
+
+header h1 {
+    color: white;
+}
+
+/* Footer background and text */
+
+footer p,
+footer a,
+footer a:link,
+footer a:visited {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Dialog backdrop */
+
+dialog::backdrop {
+    background-color: rgba(46, 31, 158, 0.6);
 }
